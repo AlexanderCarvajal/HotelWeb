@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Web | Habitación</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title>Hotel Web</title>
+  </head>
+  <body>
     <header>
+      <div class="container-header">
         <div class="empresa">
-            <h1>HOTEL WEB</h1>
-            <img src="img/" alt="logo">
+          <img src="img/logo.png" alt="logo" />
+          <h1>HOTEL WEB</h1>
         </div>
         <form action="" class="buscador">
-        <label for="buscar">Buscar:</label>
-            <input type="text">
+          <label for="buscar">Encuentra lo que buscas:</label><br />
+          <input
+            type="text"
+            name="buscador"
+            placeholder="Escribe una palabra clave..."
+          />
+          <input type="submit" value="Buscar" />
         </form>
-         <div class="login">
-            <p><a href="login.html">Iniciar sesión</a></p>
-        </div>
         <div class="filtros">
-            <p>Filtrar por: </p>
-            <select name="filtros" id="select-filtro">
-                <option value="Mayor precio">Mayor precio</option>
-                <option value="Menor precio">Menor precio</option>
-                <option value="Descuentos">Descuentos</option>
-                <option value="Más de 2 personas">Más de 2 personas</option>
-                <option value="Recomendados">Recomendados</option>
-            </select>
-        </div>     
+          <p>Filtrar por:</p>
+          <select name="filtros" id="select-filtro">
+            <option value="Mayor precio">Mayor precio</option>
+            <option value="Menor precio">Menor precio</option>
+            <option value="Descuentos">Descuentos</option>
+            <option value="Más de 2 personas">Más de 2 personas</option>
+            <option value="Recomendados">Recomendados</option>
+          </select>
+        </div>
+        <div class="login">
+          <p><a href="login.html">Iniciar sesión</a></p>
+        </div>
+      </div>
     </header>
     <main>
-        <img src="img/" alt="habitacion">
-    </main>
-    <aside>
-        <h1>Habitación en Bucaramanga</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quaerat delectus labore, mollitia, placeat, fugiat eius deserunt expedita quam perferendis repellat odio earum magni quas tempore natus explicabo reiciendis voluptatibus numquam reprehenderit?
-        </p>
-        <div class="reservar">
+      <article class="container-habitacion">
+        <div class="imagen">
+          <img src="img/habitacion.jpg" alt="habitacion" />
+        </div>
+
+        <div class="descripcion">
+          <h1>Habitación en Bucaramanga</h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            repellat rem placeat facilis doloribus ipsam quidem aperiam officia?
+            Consequatur, consectetur.
+          </p>
+          <div class="reservar">
             <h2>RESERVAR</h2>
             <form action="">
-                <label for="fecha-reserva">Fecha de reservación:</label>
-                <input type="date" name="fecha" id="fecha-reserva">
-                <label for="correo">Ingrese un correo:</label>
-                <input type="email" name="email" id="email">
-                <input type="button" value="Reservar">
+              <label for="fecha-inicio">Fecha de inicio:</label><br />
+              <input type="date" name="fecha" id="fecha-inicia" /><br />
+              <label for="fecha-fin">Fecha de finalización:</label><br />
+              <input type="date" name="fecha" id="fecha-fin" /><br />
+              <label for="correo">Ingrese un correo:</label><br />
+              <input type="email" name="email" id="email" /><br />
+              <input type="submit" value="Reservar" />
             </form>
+          </div>
         </div>
-    </aside>
+      </article>
+    </main>
     <footer>
-        <h1>HOTEL WEB</h1>
-        <p>
-            Dirección: Cra 11 #454-20 Bucaramanga
-        </p>
-        <p>
-            Celular: +57 3202502679
-        </p>
+      <h1>HOTEL WEB</h1>
+      <p>Dirección: Cra 11 #454-20 Bucaramanga</p>
+      <p>Celular: +57 3202502679</p>
     </footer>
-</body>
+  </body>
 </html>

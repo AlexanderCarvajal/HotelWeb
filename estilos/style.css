@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* CABECERA */
+
+header {
+  background-color: rgb(210, 236, 236);
+  padding: 20px;
+}
+.container-header {
+  display: flex;
+  height: 110px;
+  justify-content: space-around;
+}
+.empresa {
+  width: 200px;
+  height: 110px;
+  text-align: center;
+}
+.empresa > h1 {
+  font-size: 25px;
+}
+.empresa > img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.buscador {
+  padding: 20px;
+  width: 46%;
+  height: 110px;
+  margin: auto 0;
+}
+.buscador > input[name="buscador"] {
+  border: none;
+  border-radius: 20px;
+  width: 60%;
+  height: 35px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.buscador > input[type="submit"] {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 90px;
+  background-color: rgb(46, 144, 201);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login {
+  padding: 20px;
+  height: 60px;
+  margin: auto 0;
+}
+.login > p > a {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+}
+.filtros {
+  width: 10%;
+  height: 50px;
+  margin: auto 0;
+}
+.filtros > select[id="select-filtro"] {
+  border: none;
+  width: 150px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+/* CONTENIDO */
+.habitaciones {
+  padding: 20px;
+}
+.habitacion {
+  background-color: rgb(236, 236, 236);
+  width: 40%;
+  margin: 20px 0 20px 40px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.habitacion > img {
+  width: 30%;
+}
+.informacion {
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.informacion > h3 {
+  width: 100%;
+  height: 50px;
+}
+.informacion > h5 {
+  width: 100%;
+  height: 25px;
+  color: rgb(104, 104, 104);
+  align-self: flex-end;
+}
+
+.habitacion > button {
+  border: none;
+  background-color: rgb(57, 224, 51);
+  width: 15%;
+  height: 40px;
+  margin: auto 0;
+  border-radius: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(216, 216, 216);
+  padding: 15px;
+  text-align: center;
+  font-size: small;
+}
+
+/* PAGINA HISTORIAL */
+
+.historial {
+  padding: 20px;
+}
+.historial > h1 {
+  font-size: 35px;
+  margin-left: 40px;
+}
+
+.reservacion {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.reservacion > input[type="date"] {
+  border: none;
+  padding: 10px;
+  width: 60%;
+  height: 35px;
+  border-radius: 20px;
+}
+
+/*PAGINA HABITACIÓN*/
+
+.container-habitacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.imagen > img {
+  width: 100%;
+}
+.imagen {
+  width: 40%;
+  margin: auto 0;
+}
+
+.descripcion {
+  width: 25%;
+  margin-left: 60px;
+  background-color: rgb(241, 245, 248);
+  padding: 20px;
+}
+.reservar {
+  margin-top: 15px;
+}
+
+.reservar > form > input {
+  border: none;
+  width: 70%;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: ;
+}
+
+.reservar > form > input[type="submit"] {
+  background-color: rgb(57, 224, 51);
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
+
+/* PAGINA LOGIN */
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario {
+  background-color: rgb(210, 236, 236);
+  width: 30%;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.formulario > form > input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.formulario > form > input[type="submit"] {
+  background-color: rgb(57, 224, 51);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.formulario > form > input[type="button"] {
+  background-color: rgb(224, 51, 51);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.formulario > form > p > a {
+  display: block;
+  color: black;
+  margin-bottom: 5px;
+}
+
+/* PAGINA REGISTRO */
+
+.formulario-registro {
+  background-color: rgb(210, 236, 236);
+  width: 25%;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.formulario-registro > form > input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.formulario-registro > form > input[type="submit"] {
+  background-color: rgb(57, 224, 51);
+  color: white;
+  font-weight: 600;
+}
+.formulario-registro > form > input[type="button"] {
+  background-color: rgb(224, 51, 51);
+  color: white;
+  font-weight: 600;
+}
+
+/*PAGINA PERFIL*/
+
+.container-perfil {
+  background-color: rgb(218, 235, 235);
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+.formulario-actualizar > form > input {
+  border: none;
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.formulario-actualizar > form > input[type="submit"] {
+  background-color: rgb(57, 224, 51);
+  color: white;
+  font-weight: 600;
+}
