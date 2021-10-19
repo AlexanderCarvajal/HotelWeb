@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Web | Perfil</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title>Hotel Web</title>
+  </head>
+  <body>
     <header>
+      <div class="container-header">
         <div class="empresa">
-            <h1>HOTEL WEB</h1>
-            <img src="img/" alt="logo">
+          <img src="img/logo.png" alt="logo" />
+          <h1>HOTEL WEB</h1>
         </div>
         <form action="" class="buscador">
-        <label for="buscar">Buscar:</label>
-            <input type="text">
+          <label for="buscar">Encuentra lo que buscas:</label><br />
+          <input
+            type="text"
+            name="buscador"
+            placeholder="Escribe una palabra clave..."
+          />
+          <input type="submit" value="Buscar" />
         </form>
-         <div class="login">
-            <p><a href="login.html">Iniciar sesión</a></p>
-        </div>
         <div class="filtros">
-            <p>Filtrar por: </p>
-            <select name="filtros" id="select-filtro">
-                <option value="Mayor precio">Mayor precio</option>
-                <option value="Menor precio">Menor precio</option>
-                <option value="Descuentos">Descuentos</option>
-                <option value="Más de 2 personas">Más de 2 personas</option>
-                <option value="Recomendados">Recomendados</option>
-            </select>
-        </div>     
+          <p>Filtrar por:</p>
+          <select name="filtros" id="select-filtro">
+            <option value="Mayor precio">Mayor precio</option>
+            <option value="Menor precio">Menor precio</option>
+            <option value="Descuentos">Descuentos</option>
+            <option value="Más de 2 personas">Más de 2 personas</option>
+            <option value="Recomendados">Recomendados</option>
+          </select>
+        </div>
+        <div class="login">
+          <p><a href="login.html">Iniciar sesión</a></p>
+        </div>
+      </div>
     </header>
     <main>
+      <div class="container-perfil">
         <h1>Perfil</h1>
         <h2>Actualizar datos</h2>
-
-        <form action="">
-            <label for="usuario">Actualizar usuario</label>
-            <input type="text" name="usuario" id="usuario">
-            <label for="nombre">Actualizar nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="correo">Actualizar Correo electrónico:</label>
-            <input type="email" name="email" id="email">
-            <label for="celular">Actualizar Celular:</label>
-            <input type="number" name="celular" id="celular">
-            <label for="contraseña">Actualizar Contraseña:</label>
-            <input type="password" name="contraseña" id="contraseña">
-            <label for="contraseña2">Actualizar Verifica la contraseña:</label>
-            <input type="password" name="contraseña2" id="contraseña2">
-            <input type="button" value="Actualizar">
-        </form>
+        <div class="formulario-actualizar">
+          <form action="">
+            <label for="usuario">Actualizar usuario</label><br />
+            <input type="text" name="usuario" id="usuario" /><br />
+            <label for="nombre">Actualizar nombre:</label><br />
+            <input type="text" name="nombre" id="nombre" /><br />
+            <label for="correo">Actualizar Correo electrónico:</label><br />
+            <input type="email" name="email" id="email" /><br />
+            <label for="celular">Actualizar Celular:</label><br />
+            <input type="number" name="celular" id="celular" /><br />
+            <label for="contraseña">Actualizar Contraseña:</label><br />
+            <input type="password" name="contraseña" id="contraseña" /><br />
+            <label for="contraseña2">Actualizar Verifica la contraseña:</label
+            ><br />
+            <input type="password" name="contraseña2" id="contraseña2" /><br />
+            <input type="submit" value="Actualizar" />
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
-        <h1>HOTEL WEB</h1>
-        <p>
-            Dirección: Cra 11 #454-20 Bucaramanga
-        </p>
-        <p>
-            Celular: +57 3202502679
-        </p>
+      <h1>HOTEL WEB</h1>
+      <p>Dirección: Cra 11 #454-20 Bucaramanga</p>
+      <p>Celular: +57 3202502679</p>
     </footer>
-</body>
+  </body>
 </html>
